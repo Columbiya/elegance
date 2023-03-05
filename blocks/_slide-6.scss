@@ -1,0 +1,38 @@
+.slide-6__slider {
+    max-width: 800px;
+    width: 100%;
+    margin: 30px auto 0;
+
+    display: flex;
+}
+
+.slide-6__item {
+    background-color: rgba(#fff, .25);
+    padding: 40px;
+    border-radius: 10px;
+}
+
+.slide-6__image {
+    display: inline-block;
+    border-radius: 50%;
+    overflow: hidden;
+
+    margin-bottom: 40px;
+}
+
+.slide-6__name {
+    font-size: 22px;
+
+    margin-bottom: 20px;
+}
+
+.slide-6__quote {
+    font-style: italic;
+    font-size: 17px;
+
+    margin-bottom: 20px;
+}
+
+.slide-6__position {
+    font-weight: 400;
+}

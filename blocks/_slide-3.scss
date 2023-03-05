@@ -1,0 +1,33 @@
+.slide-inner {
+    text-align: center;
+}
+.slide-3__slider {
+    display: flex;
+}
+
+.slide-3__item {
+    color: #fff;
+    text-align: center;
+    background-color: rgba(250,250,250,0.25);
+
+    padding: 40px 20px;
+    margin: 15px;
+    transition: background-color .5s ease,
+                color .5s ease;
+
+    &:hover {
+        background-color: #fff;
+        color: #000;
+    }
+}
+
+.slide-3__icon {
+    font-size: 64px;
+
+    margin-bottom: 30px;
+}
+
+.slide-3__title {
+    font-size: 22px;
+    margin-bottom: 10px;
+}

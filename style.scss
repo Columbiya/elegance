@@ -1,0 +1,168 @@
+@import "variables";
+
+body {
+    padding: 0;
+    margin: 0;
+
+    color: $white;
+    font: 16px/1.6 'Raleway', Arial, Helvetica, sans-serif;
+
+    overflow: hidden;
+}
+
+h1,h2,h3,h4,h5,h6,p {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    color: $white;
+    text-decoration: none;
+}
+
+.container {
+    padding: 0 20px;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.page-background {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    z-index: -1;
+
+    &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+
+        background: linear-gradient(to bottom, #4096ee 0%,#39ced6 100%);
+        opacity: 0.75;
+    }
+}
+
+input, textarea, button {
+    background: transparent;
+    border: none;
+    outline: none;
+
+    font: 16px/1.6 'Raleway', Arial, Helvetica, sans-serif;
+}
+
+button {
+    cursor: pointer;
+}
+
+.wrapper {
+    transition: transform .7s ease;
+}
+
+.slick-slide.slick-active {
+    outline: none;
+    cursor: grab;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(50%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+h1.animate-fade-in,
+h2.animate-fade-in,
+h3.animate-fade-in,
+h4.animate-fade-in,
+h5.animate-fade-in,
+h6.animate-fade-in {
+    animation: fadeIn 1s ease 1;
+    animation-delay: .5s;
+    animation-fill-mode: backwards;
+
+    &:nth-child(2) {
+        animation-delay: .8s;
+    }
+    &:nth-child(3) {
+        animation-delay: 1s;
+    }
+    &:nth-child(4) {
+        animation-delay: 1.2s;
+    }
+    &:nth-child(5) {
+        animation-delay: 1.4s;
+    }
+    &:nth-child(6) {
+        animation-delay: 1.6s;
+    }
+    &:nth-child(7) {
+        animation-delay: 1.8s;
+    }
+    &:nth-child(8) {
+        animation-delay: 2s;
+    }
+}
+
+div.animate-fade-in,
+form.animate-fade-in {
+    animation: fadeIn 1s ease 1;
+    animation-delay: 1s;
+    animation-fill-mode: backwards;
+
+    &:nth-child(2) {
+        animation-delay: 1.3s;
+    }
+    &:nth-child(3) {
+        animation-delay: 1.6s;
+    }
+    &:nth-child(4) {
+        animation-delay: 1.9s;
+    }
+    &:nth-child(5) {
+        animation-delay: 2.1s;
+    }
+    &:nth-child(6) {
+        animation-delay: 2.2s;
+    }
+    &:nth-child(7) {
+        animation-delay: 2.5s;
+    }
+    &:nth-child(8) {
+        animation-delay: 2.8s;
+    }
+}
+
+@import 'blocks/preloader';
+@import "blocks/social-media-fixed";
+@import "blocks/header";
+@import "blocks/slide-1";
+@import "blocks/slide-2";
+@import 'blocks/slide-3';
+@import 'blocks/slide-4';
+@import 'blocks/slide-5';
+@import 'blocks/slide-6';
+@import 'blocks/slide-7';
